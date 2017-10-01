@@ -8,9 +8,6 @@ import com.galaxy.myapplication.model.Cliente;
 
 import java.sql.ClientInfoStatus;
 
-/**
- * Created by Alumno on 1/10/2017.
- */
 
 public class MySQLOpenHelper extends SQLiteOpenHelper {
 

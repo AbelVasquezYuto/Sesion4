@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,9 +7,21 @@
     android:orientation="vertical"
     tools:context="com.galaxy.myapplication.MainActivity">
 
-    <EditText
-        android:hint="NOMBRE"
+    <Button
+        android:id="@+id/Bt_agregar"
+        android:text="@string/agregar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-</LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Rv_clientes"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Bt_agregar"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
